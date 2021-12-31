@@ -13,6 +13,8 @@ echo "127.0.0.1 localhost
 192.168.10.13 puppetserver.localdomain.fahim
 192.168.10.12 client.localdomain.fahim
 192.168.10.9 dnsserver.localdomain.fahim" > /etc/hosts
+
+
 echo "${HOSTNAME}/localadmin.fahim" > /etc/hostname
 reboot now
 ```
