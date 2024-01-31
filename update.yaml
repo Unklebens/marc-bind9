@@ -1,0 +1,6 @@
+---
+- name: "update"
+  hosts: all
+  tasks:
+    - name: "update taskj"
+      ansible.builtin.command: "yum update -y"

@@ -1,0 +1,23 @@
+---
+all:
+  children:
+    puppet:
+      hosts:
+        puppetserver:
+          ansible_host: 192.168.10.24
+          hostname: puppetserver.localdomain.fahim
+          ansible_user: root
+          ansible_password: root
+          ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+        puppetclient:
+          ansible_host: 192.168.10.25
+          hostname: client.localdomain.fahim
+          ansible_user: root
+          ansible_password: root
+          ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+        dnsserver:
+          ansible_host: 192.168.10.26
+          hostname: dnsserver.localdomain.fahim
+          ansible_user: root
+          ansible_password: root
+          ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
